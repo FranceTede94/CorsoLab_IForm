@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempi di form in HTML</title>
+</head>
+<body>
+    <h1>I Form</h1>
+    <p>Rappresentano il punto di contatto fra proprietari del sito e utenti</p>
+
+    <form method="" action="/elabora.php">
+        <fieldset>
+            <legend>Dati anagrafici</legend>
+
+            <label for="nomeutente">Il tuo nome</label>
+            <input type="text" id="nomeutente" name="nomeutente" placeholder="Inserisci user solo alfanumerico" required>
+            <br>
+            <label for="datadinascita">Quando sei nato?</label>
+            <input type="date" name="datadinascita" id="datadinascita">
+            <br>
+            <label for="passutente">La tua password</label>
+            <input type="password" name="passutente" id="passutente" maxlength="8">
+        </fieldset>
+        <fieldset>
+            <legend>Profilo professionale</legend>
+
+            <label for="profilo">Il tuo profilo</label>
+            <textarea name="profilo" id="profilo" cols="30" rows="10" readonly>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui repudiandae quod molestias minima voluptatum assumenda aliquam ratione rerum eos, omnis consequatur ut tempore exercitationem sequi! Quas enim aperiam iusto nisi?</textarea>
+            <br>
+            <label for="lingua">Che lingua parli?</label>
+            <select name="lingua" id="lingua">
+                <option value="en">Parlo inglese</option>
+                <option value="de">Parlo tedesco</option>
+                <option value="fr">Parlo francese</option>
+            </select>
+            <br>
+
+            <label for="genere">Di che genere sei?</label>
+            <input type="radio" name="genere" id="genere1" value="M">Maschio
+            <input type="radio" name="genere" id="genere2" value="F">Femmina
+
+            <br>
+
+            <label for="musica">Che genere ascolti?</label>
+            <input type="checkbox" name="musica" id="musica1" value="rock">Musica rock
+            <input type="checkbox" name="genere" id="musica2" value="jazz">Musica Jazz
+            <input type="checkbox" name="genere" id="musica3" value="lirica">Musica Lirica
+
+
+        </fieldset>
+
+        <fieldset>
+            <button type="submit">Invia i tuoi dati</button>
+            <!--<input type="submit" value=""> metodo alternativo per creare un bottone di invio-->
+            <button type="reset">Cancella tutto</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>

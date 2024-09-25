@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form di Prenotazione</title>
+</head>
+<body>
+    <h2>Prenotazione</h2>
+    <form action="/prenota" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="data">Data:</label><br>
+        <input type="date" id="data" name="data" required><br><br>
+        <label for="orario">Orario:</label><br>
+        <input type="time" id="orario" name="orario" required><br><br>
+        <label for="numero-persone">Numero di persone:</label><br>
+        <input type="number" id="numero-persone" name="numero-persone" required min="1"><br><br>
+        <input type="submit" value="Prenota">
+    </form>
+</body>
+</html>
